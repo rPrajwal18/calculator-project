@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator{
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.698);
+    
+}
+
+#display{
+    width: 243px;
+    padding: 20px;
+    font-size: 3.3rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    backdrop-filter: blur(5px);
+    background-color: rgba(46, 46, 46, 0.589);
+    color: white;
+}
+
+#clearBtn button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 22px;
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 28%);
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+#clearBtn button:hover{
+    background-color: hsl(0, 0%, 40%);
+    transition: background-color 0.5s;
+}
+
+#clearBtn button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+#keys button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 22px;
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 28%);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#keys button:hover{
+    background-color: hsl(0, 0%, 40%);
+    transition: background-color 0.5s;
+}
+
+#keys button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+
+#keys .operatorBtn{
+    background-color: hsla(35, 100%, 45%, 0.7);
+    transition: background-color 0.5s;
+}
+
+#keys .operatorBtn:hover{
+    background-color: hsla(35, 100%, 60%, 0.7);
+}
+
+#keys .operatorBtn:active{
+    background-color: hsla(35, 98%, 70%, 0.7);
+}
+
